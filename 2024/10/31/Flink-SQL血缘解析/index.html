@@ -235,6 +235,29 @@
 
 
 
+  <div id="gitalk-container"></div>
+
+  <script>
+    function loadGitalkSuc() {
+      const gitalk = new Gitalk({
+        clientID: 'Ov23li6rOj9e5eGujY4W',
+        clientSecret: '2a78e35d95b9ffc8a38e8ef7f5e5dee038ecc1b1',
+        repo: 'https://github.com/oyesin/blog-comment',
+        owner: 'oyesin',
+        admin: ['oyesin'],
+        id: location.pathname,
+        distractionFreeMode: false
+      })
+
+      gitalk.render('gitalk-container')
+    }
+  </script>
+  
+    <link rel="stylesheet" href="/plugins/gitalk.css">
+    <script type="text/javascript" src="/plugins/gitalk.min.js" onload="loadGitalkSuc(this)"></script>
+  
+
+
 
       </div>
     
